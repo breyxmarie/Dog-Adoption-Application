@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBB6"
+    tools:context=".DogProfile">
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/back2"
+        android:backgroundTint="#513A24"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="413dp"
+        android:layout_height="65dp"
+        android:background="#513A24"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="18dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dog128px" />
+
+        <LinearLayout
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="DogsInSight!"
+                android:textColor="#D6CFCF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="679dp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="154dp"
+                android:layout_height="17dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Lorem ipsum dolor sit amet"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="701dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="7dp">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No: (000) 000.000"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="671dp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: dis@gmail.com"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="688dp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Address: 123 Anywhere St., City"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="705dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Hooray! You've got a cute one!"
+            android:textAlignment="center"
+            android:textColor="#3A3A3A"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Make sure to give this dog the love it deserves! Mushy mushy!"
+            android:textAlignment="center"
+            android:textColor="#3A3A3A"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgG"
+                android:layout_width="148dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="15dp"
+                tools:srcCompat="@drawable/dog" />
+
+            <LinearLayout
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Dog ID: 5"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/name_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Dog Name: Jeremy"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/breed_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Breed: Chowder"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/age_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Age: 3 years"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weight_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Weight: 30lbs"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/vaccine_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Vaccinated: Yes"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+
+            <Button
+                android:id="@+id/btnAdopt"
+                android:layout_width="114dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="120dp"
+                android:backgroundTint="#513A24"
+                android:text="Adopt Now"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D4A262"
+        app:srcCompat="@drawable/dog128px" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="198dp"
+        android:background="@drawable/paw"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Woof! Woof!"
+            android:textAlignment="center"
+            android:textColor="#CCBFBF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Lend a paw and give these cuddly furries some love!"
+            android:textAlignment="center"
+            android:textColor="#CCBFBF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

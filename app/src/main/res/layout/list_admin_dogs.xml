@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#FFFBB6">
+
+  <TextView
+    android:id="@+id/admin_vaccine"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="3dp"
+    android:text="TextView"
+    android:textColor="#FFFBB6"
+    app:layout_constraintEnd_toStartOf="@+id/admin_weight"
+    app:layout_constraintStart_toEndOf="@+id/admin_id"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/admin_age"
+    android:layout_width="0dp"
+    android:layout_height="23dp"
+    android:text="TextView"
+    android:textColor="#FFFBB6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/admin_weight"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/editDetailsBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp"
+    android:layout_marginEnd="32dp"
+    android:backgroundTint="#513A24"
+    android:text="Edit Details"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/admin_weight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:text="TextView"
+    android:textColor="#FFFBB6"
+    app:layout_constraintEnd_toStartOf="@+id/admin_age"
+    app:layout_constraintStart_toEndOf="@+id/admin_vaccine"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/admin_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="130dp"
+    android:layout_marginEnd="10dp"
+    android:text="TextView"
+    android:textColor="#FFFBB6"
+    app:layout_constraintEnd_toStartOf="@+id/admin_vaccine"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/imgDog"
+    android:layout_width="87dp"
+    android:layout_height="77dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/dog" />
+
+  <LinearLayout
+    android:id="@+id/linearLayout7"
+    android:layout_width="114dp"
+    android:layout_height="49dp"
+    android:layout_marginTop="28dp"
+    android:layout_marginEnd="24dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toStartOf="@+id/editDetailsBtn"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/admin_Name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Name"
+      android:textColor="#000000" />
+
+    <TextView
+      android:id="@+id/admin_breed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Breed"
+      android:textColor="#000000" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/admin_bloodType"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:text="TextView"
+    android:textColor="#FFFBB6"
+    app:layout_constraintEnd_toStartOf="@+id/admin_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tempImages"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TextView"
+    android:textColor="#00FFFFFF"
+    tools:layout_editor_absoluteX="50dp"
+    tools:layout_editor_absoluteY="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

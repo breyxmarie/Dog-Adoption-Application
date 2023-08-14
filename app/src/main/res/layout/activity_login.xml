@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBB6"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/back2"
+        android:backgroundTint="#513A24"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#D4A262"
+            app:srcCompat="@drawable/dog128px" />
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="395dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+  <LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="346dp"
+    android:layout_height="232dp"
+    android:layout_marginBottom="63dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.492"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="20dp"
+      android:layout_weight="1" />
+
+    <TextView
+      android:id="@+id/textView37"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:fontFamily="@font/montserrat"
+      android:text="DogsInSight!"
+      android:textAlignment="center"
+      android:textColor="#513A24"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+    <TextView
+      android:id="@+id/textView55"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:fontFamily="@font/montserrat"
+      android:text="Sign In"
+      android:textAlignment="center"
+      android:textColor="#513A24"
+      android:textSize="20sp"
+      android:textStyle="normal" />
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="20dp"
+      android:layout_weight="1" />
+
+    <EditText
+      android:id="@+id/user"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:backgroundTint="#513A24"
+      android:ems="10"
+      android:hint="Username"
+      android:inputType="textPersonName"
+      android:textColor="#513A24"
+      android:textColorHint="#513A24" />
+
+    <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:backgroundTint="#513A24"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:textColor="#513A24"
+      android:textColorHint="#513A24" />
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_weight="1" />
+
+    <Button
+      android:id="@+id/signIn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="130dp"
+
+      android:backgroundTint="#513A24"
+      android:text="Sign In" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/linearLayout4"
+    android:layout_width="367dp"
+    android:layout_height="213dp"
+    android:orientation="horizontal"
+    android:paddingTop="50dp"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+    <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="296dp"
+      android:layout_height="141dp"
+      android:layout_weight="1"
+      app:srcCompat="@drawable/dog" />
+
+    <TextView
+      android:id="@+id/textView56"
+      android:layout_width="391dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:fontFamily="@font/montserrat"
+      android:paddingTop="30dp"
+      android:text="Woof woof! Dogs are not colorblind as they can see both blue and yellow."
+      android:textAlignment="center"
+      android:textColor="#513A24"
+      android:textStyle="italic" />
+  </LinearLayout>
+
+  <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="413dp"
+        android:layout_height="65dp"
+        android:background="#513A24"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="18dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dog128px" />
+
+        <LinearLayout
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="DogsInSight!"
+                android:textColor="#D6CFCF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="679dp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="154dp"
+                android:layout_height="17dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Lorem ipsum dolor sit amet"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="701dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="7dp">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No: (000) 000.000"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="671dp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: dis@gmail.com"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="688dp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Address: 123 Anywhere St., City"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="705dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

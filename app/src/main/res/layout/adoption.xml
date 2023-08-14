@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBB6">
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/back2"
+        android:backgroundTint="#513A24"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Want a doggo? A Fluffo?"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textColor="#513A24"/>
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="#513A24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="20dp"
+                android:text="Adoption Form"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textColor="#513A24"/>
+
+            <EditText
+                android:id="@+id/dog_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Dog ID"
+                android:textColor="#513A24"
+                android:inputType="textPersonName"
+                android:textSize="13dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"
+                />
+
+            <EditText
+                android:id="@+id/owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#513A24"
+                android:textSize="13dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"/>
+
+            <EditText
+                android:id="@+id/owner_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="#513A24"
+                android:textSize="13dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"/>
+
+            <EditText
+                android:id="@+id/owner_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Address"
+                android:textColor="#513A24"
+                android:inputType="textPersonName"
+                android:textSize="13dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"/>
+
+            <EditText
+                android:id="@+id/owner_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Contact No."
+                android:textColor="#513A24"
+                android:inputType="textPersonName"
+                android:textSize="13dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"/>
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="130dp"
+                android:text="Confirm"
+                android:textSize="10dp"
+                android:textColorHint="#513A24"
+                android:backgroundTint="#513A24"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="413dp"
+        android:layout_height="65dp"
+        android:background="#513A24"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="18dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dog128px" />
+
+        <LinearLayout
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="DogsInSight!"
+                android:textColor="#D6CFCF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="679dp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="154dp"
+                android:layout_height="17dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Lorem ipsum dolor sit amet"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="701dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="7dp">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No: (000) 000.000"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="671dp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: dis@gmail.com"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="688dp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Address: 123 Anywhere St., City"
+                android:textColor="#D6CFCF"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="244dp"
+                tools:layout_editor_absoluteY="705dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#D4A262"
+            app:srcCompat="@drawable/dog128px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="198dp"
+        android:background="@drawable/paw"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Woof! Woof!"
+            android:textAlignment="center"
+            android:textColor="#CCBFBF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="20dp"
+            android:text="Lend a paw and give these cuddly furries some love!"
+            android:textAlignment="center"
+            android:textColor="#CCBFBF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
